@@ -1,5 +1,7 @@
 {
-  "name": "simple_inherit",
+  "name": "simple-inherit",
+  "description": "This module provides a simple way to inherit function and extending its prototype properties",
+  "author": "Ramakrishnan Vasudevan <raamkrish23@gmail.com>",
   "version": "0.0.1",
   "main": "./lib/inherit",
   "devDependencies": {
