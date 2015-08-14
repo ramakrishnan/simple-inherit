@@ -24,7 +24,7 @@ var Derived = inherits(Base, function() {
 ```
 # Example
 
-Ltes say a base function as below
+Lets say a base function as below
 ```js
 var inherits = require('simple-inherit');
 var Base = function() {
