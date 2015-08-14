@@ -3,7 +3,6 @@
 This module provides a simple way to inherit function and extending its prototype properties
 
 # Getting Started
----------------
 
 You can install using Node Package Manager (npm):
 npm install simple-inherit
