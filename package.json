@@ -1,0 +1,12 @@
+{
+  "name": "simple_inherit",
+  "version": "0.0.1",
+  "main": "./lib/inherit",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/inherit_test.js"
+  }
+}
