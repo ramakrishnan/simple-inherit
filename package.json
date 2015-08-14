@@ -2,8 +2,18 @@
   "name": "simple-inherit",
   "description": "This module provides a simple way to inherit function and extending its prototype properties",
   "author": "Ramakrishnan Vasudevan <raamkrish23@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./lib/inherit",
+  "License": "Apache License",
+  "keywords": [
+    "inheritance",
+    "prototype",
+    "class",
+    "extend",
+    "object-oriented",
+    "inherits"
+  ],
+  "repository": "git://github.com/ramakrishnan/simple-inherit",
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
