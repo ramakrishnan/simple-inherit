@@ -11,7 +11,11 @@
     "class",
     "extend",
     "object-oriented",
-    "inherits"
+    "inherits",
+    "inherit",
+    "super",
+    "function",
+    "object"
   ],
   "repository": "git://github.com/ramakrishnan/simple-inherit",
   "devDependencies": {

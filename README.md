@@ -5,7 +5,8 @@ This module provides a simple way to inherit function and extending its prototyp
 # Getting Started
 
 You can install using Node Package Manager (npm):
-npm install simple-inherit
+
+nipm install simple-inherit
 
 # Usage
 
@@ -24,7 +25,7 @@ var Derived = inherits(Base, function() {
 ```
 # Example
 
-Lets say a base function as below
+Lets say a Base function as below
 ```js
 var inherits = require('simple-inherit');
 var Base = function() {
@@ -35,11 +36,12 @@ Base.prototype = {
   "baseProto" : "Prototype of Base"
 };
 ```
-This can be inherited by another function, which will in turn get all the properties of the Base class, like.
+### Features
 * Gets a copy of the Base's prototype.
 * Gets a copy of the Base class's static properties.
 * Shares the same constructor of the base class, (unless supplied its own)
-
+* Extends the derived class's perperty chain using extendPrototype
+* Access the ancestor's prototype chain using __super__
 ### Derived class with no constructor
 ```js
 var Derived = inhertis(Base);
@@ -68,3 +70,4 @@ Derived.extendPrototype({
 var d = new Derived();
 d.derivedProto            //  I am derived prototype
 ```
+
