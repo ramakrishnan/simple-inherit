@@ -8,6 +8,13 @@ You can install using Node Package Manager (npm):
 
 nipm install simple-inherit
 
+# Features
+* Gets a copy of the Base's prototype.
+* Gets a copy of the Base class's static properties.
+* Shares the same constructor of the base class, (unless supplied its own)
+* Extends the derived class's perperty chain using extendPrototype
+* Access the ancestor's prototype chain using `__super__`
+
 # Usage
 
 ```js
@@ -36,12 +43,7 @@ Base.prototype = {
   "baseProto" : "Prototype of Base"
 };
 ```
-### Features
-* Gets a copy of the Base's prototype.
-* Gets a copy of the Base class's static properties.
-* Shares the same constructor of the base class, (unless supplied its own)
-* Extends the derived class's perperty chain using extendPrototype
-* Access the ancestor's prototype chain using __super__
+
 ### Derived class with no constructor
 ```js
 var Derived = inhertis(Base);
