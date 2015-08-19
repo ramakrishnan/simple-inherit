@@ -13,7 +13,7 @@ nipm install simple-inherit
 * Gets a copy of the Base class's static properties.
 * Shares the same constructor of the base class, (unless supplied its own)
 * Extends the derived class's perperty chain using extendPrototype
-* Access the ancestor's prototype chain using `__super__`
+* Access the immediate parent's prototype chain using `__super__`
 
 # Usage
 
@@ -25,9 +25,7 @@ var Base = function() { };
 var Derived = inherits(Base);
 
 // Derived class with its own  constructor.
-var Derived = inherits(Base, function() { 
-
-});
+var Derived = inherits(Base, function() { });
 
 ```
 # Example
@@ -64,7 +62,7 @@ d.baseProto             //  Prototype of Base
 Derived.staticProperty  // Base
 ```
 
-### Use extendPrototype to add more prototype properties.
+### Use `extendPrototype` to add more prototype properties.
 ```js
 Derived.extendPrototype({
   "derivedProto": 'I am derived prototype'
@@ -73,3 +71,13 @@ var d = new Derived();
 d.derivedProto            //  I am derived prototype
 ```
 
+### Use `__super__` to access immediate parent's property chain
+```js
+Derived.extendPrototype({
+  "derivedProto": function() {
+    return Derived.__super__.baseProto;
+  }
+});
+var d = new Derived();
+d.derivedProto()            //  Prototype of Base
+```
