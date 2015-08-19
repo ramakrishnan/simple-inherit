@@ -1,3 +1,7 @@
+
+[![NPM version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.0.4&x2=0)](https://www.npmjs.com/package/simple-inherit)
+
+
 # simple-inherit
 
 This module provides a simple way to inherit function and extending its prototype properties
